@@ -21,6 +21,7 @@ jobs:
 
       - name: Build
         run: |
+          cp local_config.hh src/src/src/
           luajit build.lua
 
       - name: Upload output as artifact
