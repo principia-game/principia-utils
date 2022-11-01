@@ -10,7 +10,8 @@ jobs:
 
       - name: Checkout Principia src
         uses: actions/checkout@v3
-        repository: Bithack/principia
+        with:
+          repository: Bithack/principia
 
       - name: Install deps
         run: |
