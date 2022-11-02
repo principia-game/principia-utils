@@ -52,4 +52,6 @@ end
 
 os.execute("mkdir -p bin")
 
+build('lvledit', {'z'}, {'main.cc'}, {'pkgman.cc', 'rand.c'})
+
 build('progress-get', {'z'}, {'main.cc'}, {'progress.cc'})
