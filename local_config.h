@@ -3,4 +3,6 @@
 
 #define STATIC_STORAGE_PATH "/tmp/"
 
+// rebuild for version 30 kthx
+
 #endif
