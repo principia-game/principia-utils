@@ -6,10 +6,10 @@ jobs:
   linux:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Checkout Principia src
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: Bithack/principia
           path: src
@@ -21,11 +21,10 @@ jobs:
 
       - name: Build
         run: |
-          cp local_config.h src/src/src/
           luajit build.lua
 
       - name: Upload output as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: output
           path: bin/
