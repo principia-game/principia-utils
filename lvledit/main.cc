@@ -57,16 +57,6 @@ static void get_revision(void) {
 	printf("%d", lvl.lvl.revision);
 }
 
-static void get_allow_derivatives(void) {
-	printf("%d", lvl.lvl.allow_derivatives);
-}
-
-static void set_allow_derivatives(void) {
-	_get_input();
-	lvl.lvl.allow_derivatives = (uint8_t)atoi(input);
-	lvl.save_to_path(path);
-}
-
 static void get_visibility(void) {
 	printf("%d", lvl.lvl.visibility);
 }
@@ -112,8 +102,6 @@ struct handler handlers[] = {
 	{"--get-version", get_version},
 	{"--get-revision", get_revision},
 	{"--get-gids", get_gids},
-	{"--get-allow-derivatives", get_allow_derivatives},
-	{"--set-allow-derivatives", set_allow_derivatives},
 	{"--get-visibility", get_visibility},
 	{"--set-visibility", set_visibility},
 	{"--get-community-id", get_community_id},
