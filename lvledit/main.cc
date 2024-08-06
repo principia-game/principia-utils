@@ -120,24 +120,6 @@ main(int argc, char **argv) {
 			exit(1);
 		}
 
-		/**
-		 * Get:
-		 * gids
-		 * type
-		 * version
-		 * revision
-		 * parent-id
-		 *
-		 * GetSet:
-		 * community_id
-		 * name
-		 * descr
-		 * allow_derivatives
-		 * locked
-		 *
-		 * flag_active
-		 **/
-
 		for (int x=0; x<NUM_HANDLERS; x++) {
 			if (strcmp(handlers[x].str, argv[2]) == 0) {
 				(handlers[x].fn)();
