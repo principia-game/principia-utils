@@ -128,6 +128,10 @@ main(int argc, char **argv) {
 		}
 
 		return 0;
+	} else if (argc == 2 && strcmp(argv[1], "--get-built-level-version") == 0) {
+		printf("%d", LEVEL_VERSION);
+
+		return 0;
 	} else {
 		fprintf(stderr, "why are we here\n");
 		printf("usage: lvledit <path> <method>\n");
