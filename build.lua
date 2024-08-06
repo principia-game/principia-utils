@@ -3,7 +3,7 @@
 local PREFIX = "src"
 
 -- Common build flags
-local COMMON_FLAGS = "-D_NO_TMS -D__STDC_FORMAT_MACROS=1 -O2"
+local COMMON_FLAGS = "-D_NO_TMS -O2"
 
 -- Include dirs
 local INCLUDE_DIRS = {

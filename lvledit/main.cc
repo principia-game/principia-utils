@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../src/src/pkgman.hh"
+#include "pkgman.hh"
 
 #define MAX_READ (4096*18)
 
